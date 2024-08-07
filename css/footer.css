@@ -9,7 +9,8 @@
 	display: none; /* Escondido por padrão */
 	position: fixed;
 	bottom: 20px;
-	right: 30px;
+	left: 50%;
+	transform: translateX(-50%);
 	z-index: 99;
 	font-size: 18px;
 	border: none;
