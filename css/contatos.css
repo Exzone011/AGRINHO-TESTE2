@@ -1,92 +1,75 @@
-/* --------------------------- *\
-			contatos
-\* --------------------------- */
-
+/* Estilos para a seção de contato */
 .contatos {
-	background-color: var(--color-secundario);
-	position: relative;
-	z-index: 100;
+    padding: 20px;
 }
 
-.contatos .container-adorno {
-	height: var(--espaciado-titulo);
-	background-color: var(--color-white);
-	/* propiedades restantes en generales.css */
-}
-
-.contatos .titulo-adorno {
-	background-color: var(--color-white);
-	/* propiedades restantes en generales.css */
-}
-
-.contatos .titulo-texto {
-	color: var(--color-white);
-	padding-bottom: var(--espaciado-normal);
-	text-align: justify;
-	/* propiedades restantes en generales.css */
+.container-adorno {
+    /* Adicionar estilos específicos para o adorno, se necessário */
 }
 
 .contatos-grilla {
-	display: grid;
-	grid-auto-flow: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.contatos-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-adorno {
+    /* Adicionar estilos específicos para o adorno, se necessário */
+}
+
+.titulo-texto {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .formulario-input {
-	width: 70%;
-	height: var(--espaciado-muy-alto);
-	font-size: 1.1em;
-	display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
 
-	padding: 0 var(--espaciado-leve);
-	margin-left: var(--espaciado-titulo);
-	margin-bottom: var(--espaciado-normal);
-
-	border: 1px solid var(--color-lightgray);
-	border-radius: var(--border-radius);
-	box-sizing: border-box;
+textarea.formulario-input {
+    height: 100px;
+    resize: none;
 }
 
 .formulario-boton {
-	width: 20%;
-	height: var(--espaciado-muy-alto);
-	cursor: pointer;
-
-	margin-left: var(--espaciado-titulo);
-	margin-bottom: var(--espaciado-muy-alto);
-
-	border-radius: var(--border-radius);
-	border: 1px solid var(--color-white);
-
-	color: var(--color-white);
-	background-color: transparent;
-
-	font-size: 1.2em;
-	letter-spacing: 0.05em;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contatos-redes {
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.icono {
-	color: var(--color-white);
-	font-size: 4em;
-	transition: 150ms;
-}
-
-.icono:hover {
-	transform: scale(.95);
+.formulario-boton:hover {
+    background-color: #218838;
 }
 
 .depoimentos-mulheres-container {
-	margin: 0;
-	padding: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .depoimentos-mulheres {
-	width: 30em;
+    max-width: 30%;
+    height: auto;
 }
-
