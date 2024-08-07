@@ -72,4 +72,80 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-  }  
+  }
+
+  /* Estilos para a seção de contato */
+.contatos {
+    padding: 20px;
+}
+
+.container-adorno {
+    /* Adicionar estilos específicos para o adorno, se necessário */
+}
+
+.contatos-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.contatos-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-adorno {
+    /* Adicionar estilos específicos para o adorno, se necessário */
+}
+
+.titulo-texto {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.formulario-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea.formulario-input {
+    height: 100px;
+    resize: none;
+}
+
+.formulario-boton {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-boton:hover {
+    background-color: #218838;
+}
+
+.depoimentos-mulheres-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimentos-mulheres {
+    max-width: 30%;
+    height: auto;
+}
