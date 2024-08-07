@@ -8,6 +8,12 @@ html {
 	font-size: 16px;
 }
 
+  
+body {
+	background: url('/images/fundo.jpg') no-repeat center center fixed;
+	background-size: cover;
+  }
+
 body {
 	margin: 0;
 	height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
@@ -66,10 +72,4 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-  }
-  
-  body {
-	background: url('/images/fundo.jpg') no-repeat center center fixed;
-	background-size: cover;
-  }
-  
+  }  
