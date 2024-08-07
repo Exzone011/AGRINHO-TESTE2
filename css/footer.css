@@ -7,7 +7,7 @@ body {
 }
 
 .content {
-	padding-bottom: 100px; /* Espaço para o rodapé */
+	padding-bottom: 200px; /* Espaço para o rodapé */
 }
 
 .footer {
@@ -22,6 +22,10 @@ body {
 
 .footer h3 {
 	margin-bottom: 10px;
+}
+
+.footer p {
+	margin: 5px 0;
 }
 
 .social-icons {
@@ -49,8 +53,9 @@ body {
 
 .back-to-top {
 	position: fixed;
-	bottom: 70px; /* Acima do rodapé */
-	right: 20px;
+	bottom: 90px; /* Acima do rodapé */
+	left: 50%;
+	transform: translateX(-50%);
 	display: none;
 	background-color: #333;
 	color: white;
