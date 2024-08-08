@@ -1,3 +1,4 @@
+// Variável para o carrossel
 let slideIndex = 0;
 
 function moveSlide(n) {
@@ -15,24 +16,29 @@ function moveSlide(n) {
     document.querySelector('.carousel-slide').style.transform = `translateX(${-slideIndex * slideWidth}px)`;
 }
 
-    // Pegue o botão
-    var mybutton = document.getElementById("backToTopBtn");
+// Variáveis para o botão "Voltar ao Topo"
+const backToTopBtn = document.getElementById("backToTopBtn");
 
-    // Quando o usuário rolar para baixo 20px do topo do documento, mostre o botão
-    window.onscroll = function() {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
+// Função para mostrar/ocultar o botão com base na rolagem
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
     }
+}
 
-    // Quando o usuário clicar no botão, role para o topo do documento
-    function topFunction() {
-        document.body.scrollTop = 0; // Para Safari
-        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
-    }
+// Função para rolar ao topo do documento
+function topFunction() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}
+
+// Adiciona o evento de rolagem
+window.onscroll = function() {
+    scrollFunction();
+};
+
+// Adiciona o evento de clique para o botão "Voltar ao Topo"
+backToTopBtn.addEventListener('click', topFunction);
+
