@@ -119,18 +119,7 @@
 							<img src="./images/camara.jpeg" alt="Agronegócio">
 							<div class="image-credit">Aluna Mayara na Câmara Municipal de Santo Antônio da Platina-Pr, apresentando seu trabalho de pesquisa em consonânica ao mês das Altas Habilidades - Crédito: imagem do autor</div>
 						</div>
-						<div class="carousel-container">
-							<div class="carousel-slide">
-								<img src="image1.jpg" alt="Image 1">
-								<img src="image2.jpg" alt="Image 2">
-								<img src="image3.jpg" alt="Image 3">
-								<img src="image4.jpg" alt="Image 4">
-							</div>
-							<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-							<button class="next" onclick="moveSlide(1)">&#10095;</button>
-						</div>
-					
-						<script src="scripts.js"></script>
+						
 					</div>
 		</article>
 
@@ -210,11 +199,32 @@
         Desenvolvido by Guilherme Barbosa Do Espirito Santo
     </p>
 
-    <!-- Botão "Voltar ao Topo" -->
-    <button id="backToTopBtn" style="display: none;">&#8679;</button>
-
-    <script src="scripts.js"></script>
+    <!-- Botão Voltar ao Topo -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Voltar ao Topo">Topo</button>
 </footer>
+<script>
+    // Pegue o botão
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rolar para baixo 20px do topo do documento, mostre o botão
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando o usuário clicar no botão, role para o topo do documento
+    function topFunction() {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    }
+</script>
 </body>
 
 </html>
